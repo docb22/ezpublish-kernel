@@ -186,16 +186,13 @@ interface Handler
     public function updatePolicy( Policy $policy );
 
     /**
-     * Removes a policy from a role
+     * Deletes a policy
      *
-     * @param mixed $roleId
      * @param mixed $policyId
-     *
-     * @todo Throw exception on missing role / policy?
      *
      * @return void
      */
-    public function removePolicy( $roleId, $policyId );
+    public function deletePolicy( $policyId );
 
     /**
      * Returns the user policies associated with the user (including inherited policies from user groups)
